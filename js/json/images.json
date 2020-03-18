@@ -1,0 +1,40 @@
+{
+    "images": [
+        {
+            "URL": "images/owen.jpg",
+            "caption": "Fig 1. Owen"
+        },
+        {
+            "URL": "images/stig.png",
+            "caption": "Fig 2. Stig"
+        },
+        {
+            "URL": "images/caveformation.jpg",
+            "caption": "Fig 3. Formation of a cave."
+        },
+        {
+            "URL": "images/dylan.jpg",
+            "caption": "Fig 4. Dylan"
+        },
+        {
+            "URL": "images/Em.jpg",
+            "caption": "Fig 5. Em"
+        },
+        {
+            "URL": "images/bcalogo.png",
+            "caption": "Fig 6. The BCA logo."
+        },
+        {
+            "URL": "images/undebbangor.png",
+            "caption": "Fig 7. Undeb Bangor's logo."
+        },
+        {
+            "URL": "images/hotmk.jpg",
+            "caption": "Fig 8. Hall of the Mountain King."
+        },
+        {
+            "URL": "images/brecon.jpg",
+            "caption": "Fig 9. Brecon Beacons."
+        }
+    ]
+}
