@@ -3,92 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCC - Template</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/caves-style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c261c4e077.js" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-    <title>BUCC - Caves</title>
+    <script src="js/app.js" async></script>
+    <script src="js/caves.js" async></script>
 </head>
 <body>
-    <header>
-        <div class="logo" id="stig-logo">
-            <img src="images/stig.png" alt="The Stig">
-        </div>
-        <div class="logo" id="logo-text">
-            <h1>Bangor Students Caving Club</h1>
-        </div>
-        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-            <i class="fa fa-bars fa-2x"></i>
-        </a>
-    </header>
-    <!-- Mobile Top Navigation Menu -->
-    <div class="topnav">
-        <div id="myLinks">
-        <!-- Navigation links (hidden by default) -->
-            <a href="index.html">Home</a>
-            <a href="caving.html">Caving</a>
-            <a href="caves.html">Caves</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="join-us.html">Join Us!</a>
-        </div>
-    </div>
-    <!--Navbar with dropdown option-->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <!--Area for dropdown nav-->
-            <div class="dropdown">
-                <button class="dropbtn">Caving 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="faq.html">FAQs</a>
-                    <a href="history.html">History</a>
-                    <a href="geology.html.">Geology</a>
-                    <a href="conservation.html">Conservation</a>
-                </div>
-            </div> 
 
-            <!--Area for dropdown nav-->
-            <div class="dropdown">
-                <button class="dropbtn">Caves 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="cavesnw.html">North Wales</a>
-                    <a href="cavessw.html">South Wales</a>
-                    <a href="cavesys.html">Yorkshire</a>
-                    <a href="cavesmd.html">Mendips</a>
-                    <a href="cavesew.html">Abroad</a>
-                </div>
-            </div> 
-            <!--Area for dropdown nav-->
-            
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="join-us.html">Join Us!</a></li>
-        </ul>
-    </nav>
-    <!--End of Nav-->
-    <main>
-        <nav class="mobile-caves-nav">
+    <!--NAVIGATION-->
+    <aside id="aside">
+        <div class="logo">
+            <img src="images/bucc-logo.jpg" alt="BUCC logo">
+        </div>
+        <nav class="home-navbar">
             <ul>
-                <li><a href="cavesnw.html">North Wales</a></li>
-                <li><a href="cavessw.html">South Wales</a></li>
-                <li><a href="cavesys.html">Yorkshire</a></li>
-                <li><a href="cavesmd.html">Mendips</a></li>
-                <li><a href="cavesew.html">Abroad</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="caves.html">Caves</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join-us.html">Join Us!</a></li>
+                <!--AREA FOR DROPDOWN CAVING MENU-->
+                <div class="dropdown">
+                    <button class="dropbtn">Caving 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="faq.html">FAQs</a>
+                        <a href="history.html">History</a>
+                        <a href="geology.html">Geology</a>
+                        <a href="conservation.html">Conservation</a>
+                    </div>
+                </div> 
+                <!-- END OF DROPDOWN CAVING MENU -->
             </ul>
         </nav>
-    </main>
-
-    <footer>
-        <div class="footer-images">
-            <img src="images/bangor-logo.png" alt="Bangor University logo">
+        <footer>
             <img src="images/bcalogo.png" alt="British Caving Association Logo">
-            <img src="images/Owen King Logo-2.png" alt="My Logo">
-        </div>
-        Copyright &copy; Bangor Students Caving Club 2020
-    </footer>
+            Copyright &copy; Bangor Students Caving Club 2020
+        </footer>
+    </aside>
+
+    <!--END OF NAV-->
+
+    <!-- MOBILE NAVIGATION -->
+    <nav class="hamburger">
+        <ul class="mobile-caves-nav">
+            <li><a href="#northwales-content">North Wales</a></li>
+            <li><a href="#southwales-content">South Wales</a></li>
+            <li><a href="#mendips-content">Mendips</a></li>
+            <li><a href="#yorkshire-content">Yorkshire</a></li>
+            <li><a href="#abroad-content">Abroad!</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="home-hamburger" id="burger">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+    </nav>
+    <!-- END OF MOBILE NAVIGATION -->
+
+    <!--MAIN CONTENT-->
+
+    <main id="main">
+
+        <!---------------------------MAIN CONTENT IN HERE --------------------------->
+    <!-- 
+        - Goal: Consistency through page content
+        SECTION TO BE CREATED IN MAIN,
+         WITH :
+         class = 'page-content',
+         id = 'page-name-content'
+        then use h2 and p etc in same layout set out in style.css
+    -->
+    <header>
+        <nav class="caves-header">
+            <ul>
+                <li><a href="#northwales-content">North Wales</a></li>
+                <li><a href="#southwales-content">South Wales</a></li>
+                <li><a href="#mendips-content">Mendips</a></li>
+                <li><a href="#yorkshire-content">Yorkshire</a></li>
+                <li><a href="#abroad-content">Abroad!</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <section class="page-content" id="page-name-content">
+        <h2>UK Caves</h2>
+        <p>So where are these caves?</p>
+        <p>Hover/Click on an area to find out!</p>
+        <p class="small-paragraph">*The locations on this map are not meant to be 100% accurate,
+            but rather to outline the general area containing
+            the majority of caving activity.
+        </p>
+    </section>
+    <div class="uk-map-container">
+    <img src="images/blankuk.png" alt="http://www.supercoloring.com/coloring-pages/united-kingdom-blank-outline-map">
+    
+    <a href="#northwales-content">
+        <div class="location-dot" id="NW-dot"></div>
+    </a>
+    <a href="#southwales-content">
+        <div class="location-dot" id="SW-dot"></div>
+    </a>
+    <a href="#yorkshire-content">
+        <div class="location-dot" id="Y-dot"></div>
+    </a>
+    
+    <a href="#mendips-content">
+        <div class="location-dot" id="M-dot"></div>
+    </a>
+    
+    <a href="#abroad-content">
+            <div class="location-dot" id="A-dot"></div>
+    </a>
+
+    <section class="page-content" id="northwales-content">
+        <h2>North Wales</h2>
+        <p>The majority of caves in North Wales are found in the Wrexham/Llangollen area.
+        </p>
+    </section>
+    <section class="page-content" id="southwales-content">
+        <h2>South Wales</h2>
+        <p>Caving heaven! South Wales provides some awesome caves.</p>
+        <h3>Huts!</h3>
+        <h4>Whitewalls</h4>
+        <img src="http://www.chelseaspelaeo.org/index_htm_files/8670.jpg" alt="http://www.chelseaspelaeo.org/index_htm_files/8670.jpg">
+        <p>This is Whitewalls.</p>
+        <h4>Penwyllt</h4>
+        <img src="https://www.swcc.org.uk/images/cottage/southcottage.jpg" alt="https://www.swcc.org.uk/images/cottage/southcottage.jpg">
+    </section>
+    <section class="page-content" id="yorkshire-content">
+        <h2>Yorkshire</h2>
+        <p>Got your SRT skills all good to go? Yorkshire is your place...</p>
+    </section>
+    <section class="page-content" id="mendips-content">
+        <h2>Mendips</h2>
+        <p>Em spent her whole childhood just a 1 hour walk away from Priddy, the hub of Mendip caving.
+            She even had pub grub in the pubs in Priddy multiple times!
+        </p>
+    </section>
+    <section class="page-content" id="abroad-content">
+        <h2>Abroad</h2>
+        <p>There's some amazing caves all around the world, here are some examples...</p>
+    </section>
+    
+
+    </main>
+    <!--END OF MAIN CONTENT-->
+
 </body>
 </html>

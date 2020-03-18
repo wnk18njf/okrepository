@@ -3,103 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCC - Template</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/join-us-style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c261c4e077.js" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-    <title>BSCC - Join</title>
+    <script src="js/app.js" async></script>
 </head>
 <body>
-    <header>
-        <div class="logo" id="stig-logo">
-            <img src="images/stig.png" alt="The Stig">
+
+    <!--NAVIGATION-->
+    <aside id="aside">
+        <div class="logo">
+            <img src="images/bucc-logo.jpg" alt="BUCC logo">
         </div>
-        <div class="logo" id="logo-text">
-            <h1>Bangor Students Caving Club</h1>
-        </div>
-        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+        <nav class="home-navbar">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="caves.html">Caves</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join-us.html">Join Us!</a></li>
+                <!--AREA FOR DROPDOWN CAVING MENU-->
+                <div class="dropdown">
+                    <button class="dropbtn">Caving 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="faq.html">FAQs</a>
+                        <a href="history.html">History</a>
+                        <a href="geology.html">Geology</a>
+                        <a href="conservation.html">Conservation</a>
+                    </div>
+                </div> 
+                <!-- END OF DROPDOWN CAVING MENU -->
+            </ul>
+        </nav>
+        <footer>
+            <img src="images/bcalogo.png" alt="British Caving Association Logo">
+            Copyright &copy; Bangor Students Caving Club 2020
+        </footer>
+    </aside>
+
+    <!--END OF NAV-->
+
+    <!-- MOBILE NAVIGATION -->
+    <nav class="hamburger">
+        <a href="javascript:void(0);" class="home-hamburger" id="burger">
             <i class="fa fa-bars fa-2x"></i>
         </a>
-    </header>
-    <!-- Mobile Top Navigation Menu -->
-    <div class="topnav">
-        <div id="myLinks">
-        <!-- Navigation links (hidden by default) -->
-            <a href="index.html">Home</a>
-            <a href="caving.html">Caving</a>
-            <a href="caves.html">Caves</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="join-us.html">Join Us!</a>
-        </div>
-    </div>
-    <!--Navbar with dropdown option-->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <!--Area for dropdown nav-->
-            <div class="dropdown">
-                <button class="dropbtn">Caving 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="faq.html">FAQs</a>
-                    <a href="history.html">History</a>
-                    <a href="geology.html">Geology</a>
-                    <a href="conservation.html">Conservation</a>
-                </div>
-            </div> 
-
-            <!--Area for dropdown nav-->
-            <div class="dropdown">
-                <button class="dropbtn">Caves 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="cavesnw.html">North Wales</a>
-                    <a href="cavessw.html">South Wales</a>
-                    <a href="cavesys.html">Yorkshire</a>
-                    <a href="cavesmd.html">Mendips</a>
-                    <a href="cavesew.html">Abroad</a>
-                </div>
-            </div> 
-            <!--Area for dropdown nav-->
-            
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="join-us.html">Join Us!</a></li>
-        </ul>
     </nav>
-    <!--End of Nav-->
-    <main class="join-us-main">
-        <section class="join-links">
-            <p>
-                We post regularly to our facebook page, be sure to join in order to stay up-to-date with whats happening!
-            </p>
-            <div>
-                <h1>Our Facebook Group:</h1>
-                <a href="http://www.facebook.com/groups/489286762025535/"><img src="images/facebook-logo.png" alt="Facebook"></a>
-            </div>
-        </section>
-        <section class="join-links">
-            <p>
-                Students must sign up via Undeb Bangor's webpage, you can find our link here:
-            </p>
-            <div>
-                <h1>Our Undeb Bangor link:</h1>
-                <a href="http://www.undebbangor.com/sports/sports/"><img src="images/undebbangor.png" alt="Undeb Bangor"></a>
-            </div>
-        </section>
-        <section class="join-links" id="join-links-new">
-            <p>New to caving? You can find all you need to know <a href="faq.html"><b>here!</b></a></p>
-        </section>
+    <!-- END OF MOBILE NAVIGATION -->
+
+    <!--MAIN CONTENT-->
+    
+    <main id="main">
+
+        <!---------------------------MAIN CONTENT IN HERE --------------------------->
+    <!-- 
+        - Goal: Consistency through page content
+        SECTION TO BE CREATED IN MAIN,
+         WITH :
+         class = 'page-content',
+         id = 'page-name-content'
+        then use h2 and p etc in same layout set out in style.css
+    -->
+
+    <section class="page-content" id="join-us-content">
+        <h1>Join Us!</h1>
+        <h2>Facebook</h2>
+        <p>We update our facebook page regularly with what we're up to. Join our group here:</p>
+        <a href="https://www.facebook.com/groups/489286762025535/"><img src="images/facebook-logo-new.png" alt="https://marketingland.com/facebook-updates-page-post-link-ads-in-an-effort-to-produce-better-conversion-rates-for-advertisers-48604"></a>
+        <h2>Socials</h2>
+        <p>We hold a social every _________! Come down and meet people!</p>
+        <img src="images/home-images/group-photo.jpeg" alt="A group photo.">
+        <h2>Interested in caving?</h2>
+        <p>You can find out most of what you want to know <a href="faq.html">here!</a>: </p>
+        <h2>Contact us</h2>
+        <p>You can contact us here!: </p>
+        <p>Email: bangoruniversitycaving@gmail.com</p>
+        
+        <h1>"Dig deep and stay dirty." ~ Amelia</h1>
+    </section>
+
     </main>
-    <footer>
-        <div class="footer-images">
-            <img src="images/bangor-logo.png" alt="Bangor University logo">
-            <img src="images/bcalogo.png" alt="British Caving Association Logo">
-            <img src="images/Owen King Logo-2.png" alt="My Logo">
-        </div>
-        Copyright &copy; Bangor Students Caving Club 2020
-    </footer>
+    <!--END OF MAIN CONTENT-->
+
 </body>
 </html>
