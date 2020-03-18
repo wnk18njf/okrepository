@@ -1,0 +1,47 @@
+main {
+    margin: 5%;
+    max-height: 100%;
+}
+.gallery-container h1 {
+    font-size: 30px;
+}
+.gallery-container h2 {
+    font-size: 10px;
+}
+
+#gallery-image-container {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 30px;
+}
+
+#gallery-image-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery-image-container figure img {
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    min-width: auto;
+    min-height: 100px;
+}
+
+#gallery-image-container figure figcaption {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    #gallery-image-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #gallery-image-container a {
+        padding: 30px;
+    }
+}

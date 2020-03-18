@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+html, body {
+    margin: auto;
+    max-width: 100%;
+    min-width: 300px;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+html, body {
+    background-color: black;
+    color: white;
+    font-family: 'Noto serif', serif;
+}
+
+header {
+    display: flex;
+}
+main {
+    margin-top: auto;
+    margin: 20px 0px;
+}
+#opening-background {
+    width: 100%;
+    height: 1000px;
+    background-image: url("../images/hotmk.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bat-gif {
+    position: absolute;
+    width: 200px;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    transform: translateX(300px) translateY(85px);
+    overflow: hidden;
+}
+
+#stig-logo {
+    width: auto;
+    margin-left: 20px;
+}
+#stig-logo img {
+    height: 100px;
+}
+
+#logo-text {
+    padding-left: 20px;
+    text-align: left;
+    line-height: 100px;
+}
+.hamburger {
+    display: none;
+}
+
+
+#home-logo-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 40px 40px 0px 40px;
+    transition: all 1s ease-in;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#home-logo-text {
+    text-align: center;
+}
+#home-logo-text h1 b {
+    color: darkred;
+    font-size: 50px;
+}
+
+.topnav {
+    top: 0;
+    text-align: center;
+}
+.topnav #myLinks{ 
+    display: none;
+    background-color: rgb(29, 29, 29);
+    position: relative;
+}
+.topnav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 100px;
+    font-size: 20px;
+}
+.topnav a:hover {
+    background-color: black;
+    color: darkred;
+    transition: ease 0.3s;
+}
+
+/*
+*   For home navbar
+*/
+.home-hamburger {
+    display: none;
+}
+.home-navbar {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+.home-navbar ul {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    width: auto;
+}
+.home-navbar li {
+    padding: 0px 100px;
+}
+.dropbtn {
+    background: none;
+    border: none;
+    font-size: inherit;
+    height: 50px;
+    padding: 0px 100px;
+}
+
+.home-navbar a, .dropbtn {
+    color: white;
+    cursor: pointer;
+}
+
+.home-navbar li:hover, .dropbtn:hover {
+    background-color: darkred;
+    transition: all 0.3s ease;
+}
+
+.dropdown {
+    float: left;
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+.dropdown-content a {
+    float: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown-content a:hover {
+    background-color: darkred;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*
+*   For home navbar ^^^^^^^^^
+*/
+.navbar {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    width: auto;
+}
+.navbar li {
+    padding: 0px 100px;
+}
+.dropbtn {
+    background: none;
+    border: none;
+    font-size: inherit;
+    height: 50px;
+    padding: 0px 100px;
+}
+
+.navbar a, .dropbtn {
+    color: white;
+    cursor: pointer;
+}
+
+.navbar li:hover, .dropbtn:hover {
+    background-color: darkred;
+    transition: all 0.3s ease;
+}
+
+.dropdown {
+    float: left;
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+.dropdown-content a {
+    float: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown-content a:hover {
+    background-color: darkred;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.slideshow-images {
+    width: 500px;
+    min-width: 500px;
+    height: 300px;
+    min-height: 300px;
+    margin: auto;
+    /*overflow: hidden;*/
+    padding-top: 50px;
+}
+#ss-images {
+    display: flex;
+    flex-direction: row;
+    width: 2500px;
+    transition: margin 1s ease-in-out;
+}
+#ss-images img {
+    width: 500px;
+    height: 300px;
+
+}
+
+.slideshow-buttons {
+    width: 500px;
+}
+
+.slideshow-buttons a {
+    font-size: 10px;
+    position: absolute;
+    height: 300px;
+    width: 20px;
+    line-height: 300px;
+    background-color: rgba(128, 128, 128, 0.4);
+    text-align: center;
+    opacity: 0;
+}
+
+.slideshow-buttons a:last-child {
+    transform: translateX(480px);
+}
+
+.slideshow-buttons a:hover {
+    opacity: 100;
+}
+
+.slideshow-placeholders {
+    text-align: center;
+}
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.about-us, .committee {
+    text-align: center;
+    height: auto;
+    padding-top: 20px;
+}
+
+.about-us h1 {
+    color: darkred;
+}
+
+.about-us h2 {
+    margin-top: 50px;
+}
+.about-us p {
+    padding-top: 20px;
+}
+
+
+
+.committee {
+    margin: auto;
+    width: 100%;
+}
+.committee h1 {
+    margin-top: 50px;
+}
+.committee-role {
+    height: auto;
+    margin: 50px;
+}
+.committee-role p {
+    width: 70%;
+    margin: auto;
+}
+
+.committee-role img {
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.committee h1 {
+    color: darkred;
+}
+
+.committee-role h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+
+/*
+    Media Queries
+*/ 
+/* First instance of .home-navbar overflow */
+@media screen and (max-width: 1300px) {
+    .home-navbar li, .dropbtn{
+        padding: 0px 50px;
+    }
+}
+/* second instance of home-navbar overflow*/
+@media screen and (max-width: 870px) {
+    .home-navbar ul {
+        display: none
+    }
+    .home-hamburger {
+        display: flex;
+        justify-content: center;
+        transform: translateY(8px);
+    }
+}
+
+
+/*Initial instance of navbar too small*/
+@media screen and (max-width: 1257px) {
+    .navbar {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: block;
+        float: right;
+        height: 100px;
+        min-width: 100px;
+        width: 100px;
+        text-align: center;
+        line-height: 100px;
+        transform: translateY(5px);
+    }
+}
+/*First instance of logo-text overflow*/
+@media screen and (max-width: 770px) {
+    #stig-logo {
+        display: none;
+    }
+    .footer-images img {
+        max-height: 50px;
+    }
+}
+/*Bat drop below logo for mobile*/
+@media screen and (max-width: 620px) {
+    .bat-gif {
+        display: none;
+    }
+}
+
+/* Second instance of logo overflow */
+@media screen and (max-width: 587px) {
+    #logo-text {
+        font-size: inherit;
+        line-height: 50px;
+    }
+}

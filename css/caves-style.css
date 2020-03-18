@@ -1,0 +1,43 @@
+.mobile-caves-nav {
+    text-align: center;
+}
+.mobile-caves-nav ul {
+    width: 100%;
+    height: 100%;
+}
+.mobile-caves-nav li {
+    background-color: rgb(30, 30, 30);
+    color: darkred;
+    padding: 100px 0px;
+    margin-top: 5px;
+}
+
+.mobile-caves-nav li:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+ol li {
+    list-style-type: decimal;
+    padding: 10px 0px;
+}
+article {
+    margin: 0px 20%;
+}
+article h1, h2 {
+    color: darkred;
+}
+article h2, p {
+    padding: 20px 0px;
+}
+article p {
+    color: rgb(170, 170, 170);
+}
+article ul {
+    padding: 0px 20px;
+}
+article ul li {
+    list-style-type: circle;
+}
+article a:link {
+    text-decoration: underline;
+}
