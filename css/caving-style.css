@@ -1,0 +1,28 @@
+ol li {
+    list-style-type: decimal;
+    padding: 10px 0px;
+}
+article {
+    margin: 0px 20%;
+}
+article h1, h2 {
+    color: darkred;
+}
+article h2, p {
+    padding: 20px 0px;
+}
+.conservation-text {
+    color: rgb(170, 170, 170);
+}
+article ul {
+    padding: 0px 20px;
+}
+article ul li {
+    list-style-type: circle;
+}
+article a:link {
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+}
