@@ -1,2 +1,0 @@
-# okrepository
-My repository.
