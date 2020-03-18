@@ -3,161 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCC - Template</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/caving-style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c261c4e077.js" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-    <title>BSCC - Contact Us</title>
+    <script src="js/app.js" async></script>
+    <script></script>
 </head>
 <body>
-    <header>
-        <div class="logo" id="stig-logo">
-            <img src="images/stig.png" alt="The Stig">
+
+    <!--NAVIGATION-->
+    <aside id="aside">
+        <div class="logo">
+            <img src="images/bucc-logo.jpg" alt="BUCC logo">
         </div>
-        <div class="logo" id="logo-text">
-            <h1>Bangor Students Caving Club</h1>
-        </div>
-        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+        <nav class="home-navbar">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="caves.html">Caves</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join-us.html">Join Us!</a></li>
+                <!--AREA FOR DROPDOWN CAVING MENU-->
+                <div class="dropdown">
+                    <button class="dropbtn">Caving 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="faq.html">FAQs</a>
+                        <a href="history.html">History</a>
+                        <a href="geology.html">Geology</a>
+                        <a href="conservation.html">Conservation</a>
+                    </div>
+                </div> 
+                <!-- END OF DROPDOWN CAVING MENU -->
+            </ul>
+        </nav>
+        <footer>
+            <img src="images/bcalogo.png" alt="British Caving Association Logo">
+            Copyright &copy; Bangor Students Caving Club 2020
+        </footer>
+    </aside>
+
+    <!--END OF NAV-->
+
+    <!-- MOBILE NAVIGATION -->
+    <nav class="hamburger">
+        <a href="javascript:void(0);" class="home-hamburger" id="burger">
             <i class="fa fa-bars fa-2x"></i>
         </a>
-    </header>
-    <!-- Mobile Top Navigation Menu -->
-    <div class="topnav">
-        <div id="myLinks">
-        <!-- Navigation links (hidden by default) -->
-            <a href="index.html">Home</a>
-            <a href="caving.html">Caving</a>
-            <a href="caves.html">Caves</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="join-us.html">Join Us!</a>
-        </div>
-    </div>
-    <!--Navbar with dropdown option-->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <!--Area for dropdown nav-->
-            <div class="dropdown">
-                <button class="dropbtn">Caving 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="faq.html">FAQs</a>
-                    <a href="history.html">History</a>
-                    <a href="geology.html">Geology</a>
-                    <a href="conservation.html">Conservation</a>
-                </div>
-            </div> 
-
-            <!--Area for dropdown nav-->
-            <div class="dropdown">
-                <button class="dropbtn">Caves 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="cavesnw.html">North Wales</a>
-                    <a href="cavessw.html">South Wales</a>
-                    <a href="cavesys.html">Yorkshire</a>
-                    <a href="cavesmd.html">Mendips</a>
-                    <a href="cavesew.html">Abroad</a>
-                </div>
-            </div> 
-            <!--Area for dropdown nav-->
-            
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="join-us.html">Join Us!</a></li>
-        </ul>
     </nav>
-    <!--End of Nav-->
-    <main>
-        <article>
-            <h1>History of BUCC</h1>
-            <p>
-                Some notes from ex-members.
-            </p>
-            <h2>Ian Dixson (BUCC ’81-’82)</h2>
-            <p>
-                Now you're asking! I started caving whilst at Derby (what was Derby Lonsdale College) during my initial degree years from 78
-                to 81. We had a walking weekend in the Mendips, someone dropped out of the parallel caving group so I gave it a go, got
-                hooked and then spent many weekends underground. On moving to Bangor, for my PGCE, there was no CC so set about
-                setting up a new one via the Athletic Union. I honestly can't remember my title....Chair, maybe? Possibly President. There was
-                enough interest during Freshers to form a club aided by a friend from Derby days. We used to run trips to S Wales, Derbyshire,
-                Yorkshire and, during a very cold winter of 81/82, to Ireland. I managed to obtain a very generous Union grant of about £600 to
-                purchase all manner of kit..add a nought on the end for inflation. We must have held formal meetings/had a constitution of
-                some sort/made financial reports but all that is well in the past. The CC carried on for several years after I left. Unfortunately,
-                there was one death I've heard about since...another Ian who tried to free climb a waterfall, fell, was knocked unconscious and
-                drowned. I'm guessing the CC lost members and/or was closed after that. The kit was kept at St Mary's in a kind of undercroft.
-                So, you're best bet might be to go through the Athletic Union as they should have exemplar constitutions. Nowadays,
-                organising caving trips may well come with a lot more in the way of risk assessment/liability insurance and paperwork. We used
-                to get in a minibus, stay at SWCC or a caravan at Ingleton (80p a night each!) and get on with it sometimes having three
-                groups underground in different caves at any one time. I subsequently spent most of my working life teaching geography and
-                organising all manner of school trips in UK and beyond.
-            </p>
-            <h2>Chris Cowdery (BUCC ’93-’96)</h2>
-            <p>
-                BUCC had a Captain during my time there (which was &#39;93 to &#39;96).
-                I am still in touch with a few people from BUCC, and we have an annual
-                caving trip most years.
-                Other random thoughts are:
-                <ol>
-                    <li>
-                        We used to do a trip to Poachers (Ogof Hen Ffynhonnau) during
-                        Freshers Week.
-                    </li>
-                    <li>
-                        We used to meet every other Monday (I think, it might have been every
-                        Monday) at the Friddoed Bar
-                    </li>
-                    <li>
-                        We used to stay at peoples houses as well as Caving Club huts. We had
-                        somebody in Bridgend, Keighley, Trowbridge.
-                    </li>
-                    <li>
-                        We&#39;d do mines as well, which is handy in North Wales!
-                    </li>
-                    <li>
-                        We visited Box Mine and camped underground, and did the same in
-                        Rhosydd Slate Quarry.
-                    </li>
-                    <li>
-                        We issued membership cards. I have attached one for reference. The
-                        creature was drawn by Graham Tattersall, and was called Stig. We had a
-                        colour scheme too, magenta, cyan and yellow, for membership classes
-                        (commitee, normal and honourary), but I forget which colour was which.
-                    </li>
-                    <li>
-                        We used to publish a membership list (probably illegal now), which
-                        shows Captain, Treasurer, Secretary, Gear Warden, Safety Officer, Social
-                        Secretary and Driver. It also listed the normal members.
-                    </li>
-                    <li>
-                        We had a number of sets of SRT gear. I remember getting a grant and
-                        buying them. I think they went to the AU when the club folded.
-                    </li>
-                    <li>
-                        I know two people who stayed on for post-graduate studies (one to do
-                        a PhD), so at least one of them was in BUCC to the turn of the millennium.
-                    </li>
-                </ol>
-            </p>
-        </article>
+    <!-- END OF MOBILE NAVIGATION -->
+
+    <!--MAIN CONTENT-->
+    <main id="main">
+
+        <!---------------------------MAIN CONTENT IN HERE --------------------------->
+    <!-- 
+        - Goal: Consistency through page content
+        SECTION TO BE CREATED IN MAIN,
+         WITH :
+         class = 'page-content',
+         id = 'page-name-content'
+        then use h2 and p etc in same layout set out in style.css
+    -->
+
     </main>
-    <footer>
-        <div class="footer-images">
-            <img src="images/bangor-logo.png" alt="Bangor University logo">
-            <img src="images/bcalogo.png" alt="British Caving Association Logo">
-            <img src="images/Owen King Logo-2.png" alt="My Logo">
-        </div>
-        Copyright &copy; Bangor Students Caving Club 2020
-    </footer>
+    <!--END OF MAIN CONTENT-->
+
 </body>
 </html>
-<!--
-    <article>
-            <h1></h1>
-            <p></p>
-            <h2></h2>
-            <p></p>
-    </article>
--->

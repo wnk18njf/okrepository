@@ -3,175 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c261c4e077.js" crossorigin="anonymous"></script>
     <script src="js/app.js" async></script>
     <script src="js/carousel.js" async></script>
-    <title>BSCC - Home</title>
+    <script></script>
 </head>
-<body">
+<body id="body">
+    <!-- OPENING BACKGROUND -->
     <header>
-    <div id="opening-background">
-        <div class="logo" id="home-logo-text">
-            <h1>Clwb Ogofeau<br><b>Bangor Students</b><br>Caving Club</h1>
+        <div class="opening-background" id="background">
+            <div class="home-logo">
+                <h1>Clwb Ogofeau<br><b>Bangor Students</b><br>Caving Club</h1>
+            </div>
+            <img src="images/bat.gif" id="bat-gif"alt="A Bat">
         </div>
-    </div>
-    <img class="bat-gif" id="bat" src="images/bat.gif" alt="bats">
-        <!---   HTML LOGO
-        <div class="logo" id="stig-logo">
-            <img src="images/stig.png" alt="The Stig">
-        </div>
-        <div class="logo" id="logo-text">
-            <h1>Bangor University Caving Club</h1>
-        </div>
-        -->
     </header>
-    <!--Navbar with dropdown option-->
-    <nav class="home-navbar">
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <!--Area for dropdown nav-->
-            <div class="dropdown">
-                <button class="dropbtn">Caving 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="faq.html">FAQs</a>
-                    <a href="history.html">History</a>
-                    <a href="geology.html">Geology</a>
-                    <a href="conservation.html">Conservation</a>
-                </div>
-            </div> 
-            <!--Area for dropdown nav-->
-            <div class="dropdown">
-                <button class="dropbtn">Caves 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="cavesnw.html">North Wales</a>
-                    <a href="cavessw.html">South Wales</a>
-                    <a href="cavesys.html">Yorkshire</a>
-                    <a href="cavesmd.html">Mendips</a>
-                    <a href="cavesew.html">Abroad</a>
-                </div>
-            </div> 
-            <!--Area for dropdown nav-->
+    <!-- END OF OPENING BACKGROUND -->
+    
+    <!--NAVIGATION -->
+    <aside id="aside">
+        <div class="logo">
+            <img src="images/bucc-logo.jpg" alt="BUCC logo">
+        </div>
+        <nav class="home-navbar">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="caves.html">Caves</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join-us.html">Join Us!</a></li>
+                <!--AREA FOR DROPDOWN CAVING MENU-->
+                <div class="dropdown">
+                    <button class="dropbtn">Caving 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="faq.html">FAQs</a>
+                        <a href="history.html">History</a>
+                        <a href="geology.html">Geology</a>
+                        <a href="conservation.html">Conservation</a>
+                    </div>
+                </div> 
+                <!-- END OF DROPDOWN CAVING MENU -->
+            </ul>
+        </nav>
+        <footer>
+            <img src="images/bcalogo.png" alt="British Caving Association Logo">
+            Copyright &copy; Bangor Students Caving Club 2020
+        </footer>
+    </aside>
 
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="join-us.html">Join Us!</a></li>
-        </ul>
+    <!--END OF NAV-->
 
-        <a href="javascript:void(0);" class="home-hamburger" onclick="myFunction()">
+    <!-- MOBILE NAVIGATION -->
+    <nav class="hamburger">
+        <a href="javascript:void(0);" class="home-hamburger" id="burger">
             <i class="fa fa-bars fa-2x"></i>
         </a>
     </nav>
-    <!--End of Nav-->
-    <!-- Mobile Top Navigation Menu -->
-    <div class="topnav">
-        <div id="myLinks">
-        <!-- Navigation links (hidden by default) -->
-            <a href="index.html">Home</a>
-            <a href="caving.html">Caving</a>
-            <a href="caves.html">Caves</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="join-us.html">Join Us!</a>
-        </div>
-    </div>
-    <!--Banner - Carousel for Photos-->
-    <div class="slideshow-images" id="home-carousel">
-        <nav class="slideshow-buttons">
-            <a href="#" class="slideshow-prev" id="ss-prev" onclick="return false;">&lt;</a>
-            <a href="#" class="slideshow-next" id="ss-next" onclick="return false;">&gt;</a>
-        </nav>
-        <div id="ss-images">
+    <!-- END OF MOBILE NAVIGATION -->
 
-        </div>
-        <div class="slideshow-placeholders">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    </div>
+    <!--MAIN CONTENT-->
+    <main id="main">
+        
+        <!--IMAGE CAROUSEL-->
 
-    <!--End of Banner ---------------->
-    <main>
-        <section class="about-us">
-            <h1>About Us</h1>
-            <p>
-                Re-established in 2020, Bangor Students Caving Club(BSCC) offers
-                its members the chance to see places many dont get the chance.
-            </p>
-            <p>
-                We run weekly trips to local caves and mines, as well as trips 
-                further afield every 6 weeks, to places such as the Mendips, South Wales, 
-                and Yorkshire! 
-            </p>
-        </section>
-        <section class="committee">
-            <h1>Meet the committee!</h1>
-            <section class="committee-role">
-                <h2>Captain</h2>
-                <img src="images/amelia.jpg" alt="Amelia">
-                <p>Amelia is our captain!</p>
-            </section>
-            <section class="committee-role">
-                <h2>Secretary</h2>
-                <img src="images/owen.jpg" alt="Owen">
-                <p>Owen is our secretary!</p>
-            </section>
-            <section class="committee-role">
-                <h2>Treasurer</h2>
-                <img src="images/dylan.jpg" alt="Dylan">
-                <p>
-                    Dylan is our treasurer, and our 
-                    designated committee member
-                    from Wales! He's also the clubs' jack russell,
-                    send him first if you're ever in a rush!
-                </p>
-            </section>
-            <section class="committee-role">
-                <h2>Tackle-Mistress</h2>
-                <img src="images/Em.jpg" alt="Emily">
-                <p>
-                    Emily is our tackle-mistress! (Gear & Training Officer).
-                    She spent 19 years of her life growing up in Somerset, 
-                    not aware of the vast amounts of caving around her!
+        <div class="slideshow-images" id="home-carousel">
+            <!-- SLIDESHOW BUTTONS, uneeded for auto
+                <nav class="slideshow-buttons">
+                <a href="#" class="slideshow-prev" id="ss-prev" onclick="return false;">&lt;</a>
+                <a href="#" class="slideshow-next" id="ss-next" onclick="return false;">&gt;</a>
+            </nav>
+            -->
+            <div id="ss-images">
 
-                    Don't let her height fool you, she'll anihilate a pasta bake!
-                </p>
-            </section>
-            <section class="committee-role">
-                <h2>Social Secretary</h2>
-                <img src="images/rhi.jpg" alt="Rhi">
-                <p>Rhi is our social secretary!</p>
-            </section>
-            <section class="committee-role">
-                <h2>Ray Tinkerbell Talbot</h2>
-                <img src="images/IMG_20200125_120648.jpg" alt="Raymond">
-                <p>Raymondo</p>
-            </section>
-            <section class="committee-role">
-                <h2>The Stig</h2>
-                <img src="images/stig.png" alt="stig">
-                <p>
-                    Some say... it was the stig who trained batman in the art of
-                    keeping an indentity... 
-                    Others say... he can literally taste the rainbow...
-                    All we know is... he's called the Stig!!
-                </p>
-            </section>
-        </section>
+            </div>
+            <div class="slideshow-placeholders">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <!--END OF IMAGE CAROUSEL-->
+        <!---------------------------MAIN CONTENT IN HERE --------------------------->
+    <!-- 
+        - Goal: Consistency through page content
+        SECTION TO BE CREATED IN MAIN,
+         WITH :
+         class = 'page-content',
+         id = 'page-name-content'
+        then use h2 and p etc in same layout set out in style.css
+    -->
+    <section class="page-content" id="index-content">
+        <h2>About Us</h2>
+        <p>Welcome! We are Bangor University Caving Club!</p>
+        <p>We hold regular trips to caves and mines around North Wales, with the occasional
+            trip further away, to places such as South Wales, Mendips, or Yorkshire!
+        </p>
+
+        <h2>Meet the committee!</h2>
+
+        <h3>Captain</h3>
+        <img src="images/amelia.jpg" alt="Amelia Captain">
+        <p>Amelia is our glorious Captain and this statement has totally
+            not been written under duress...
+        </p>  
+        <p>
+            She is a fantastic caver, mountaineer and human being. It is said that first
+            there was Amelia, and then there were caves...
+        </p>    
+        <p>
+            She enjoys holding pets hostage and returning them safely after her bio has
+            been written.
+        </p>
+
+        <h3>Secretary</h3>
+        <img src="images/owen.jpg" alt="Secretary Owen">
+        <p>This is an example intro for Owen. Bla bla bla.</p>       
+
+        <h3>Treasurer</h3>
+        <img src="images/dylan.jpg" alt="Treasurer Dylan">
+        <p>This is an example intro for Dylan. Bla bla bla.</p>       
+
+        <h3>Social Secretary</h3>
+        <img src="images/rhi.jpg" alt="Social Secretary Rhi">
+        <p>This is an example intro for Rhi. Bla bla bla.</p>       
+
+        <h3>Tackle Mistress</h3>
+        <img src="images/Em.jpg" alt="Tackle Mistress Em">
+        <p>This is an example intro for Em. Bla bla bla.</p>      
+
+        <h3>Ray!</h3>
+        <img src="images/IMG_20200125_120648.jpg" alt="Ray">
+        <p>Ray had been instructing Kent University Caving Club for 7 years,
+            but moved to Bangor in 2019 and has been responsible for
+            teaching our prospective cave leaders!
+        </p>  
+        <p>His hobbies include complaining about the public, and he aspires to one day 
+            graduate to 'real adulthood' and own white goods...</p> 
+
+        <h3>The Stig...</h3>
+        <img src="images/stig.png" alt="The Stig">
+        <p>This is an example intro for the Stig. Bla bla bla.</p>        
+
+    </section>
+    
+
     </main>
-    <footer>
-        <div class="footer-images">
-            <img src="images/bangor-logo.png" alt="Bangor University logo">
-            <img src="images/bcalogo.png" alt="British Caving Association Logo">
-            <img src="images/Owen King Logo-2.png" alt="My Logo">
-        </div>
-        Copyright &copy; Bangor Students Caving Club 2020
-    </footer>
-</body> 
+    <!--END OF MAIN CONTENT-->
+
+</body>
 </html>

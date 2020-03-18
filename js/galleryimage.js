@@ -42,7 +42,7 @@
 
 var container = document.getElementById('gallery-image-container');
 
-fetch('js/json/images.json')
+fetch('data/json/images.json')
 .then(function(res) {
 
     res.json().then(function(json) {

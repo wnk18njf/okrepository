@@ -1,7 +1,8 @@
 var images = document.getElementById('ss-images');
 var previous = document.getElementById('ss-prev');
 var next = document.getElementById('ss-next');
-fetch('js/json/carousel.json')
+
+fetch('data/json/carousel.json')
 .then(function(res) {
     res.json().then(function(json) {
         json.images.forEach(function(el, i) {
