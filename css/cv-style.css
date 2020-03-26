@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sen', sans-serif;
+    scroll-behavior: smooth;
+}
+#qualifications li, #education li, #key-skills li {
+    list-style-type: none;
+}
+a:link, a:checked, a:visited { 
+    text-decoration: none;
+    color: inherit;
+}
+html, body {
+    height: 100%;
+    color: white;
+}
+html {
+    background-color: white;
+}
+i {
+    color: white;
+}
+body {
+    background-color: black;
+}
+main {
+    background-color: black;
+}
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+footer div {
+    margin: 10px;
+}
+header {
+    padding-top: 20px;
+}
+header, .cv-section {
+    height: 500px;
+    padding: 100px;
+}
+h2 {
+    color: rgb(100, 1, 1);
+}
+
+/* Nav */
+nav a {
+    display: block;
+    width: 20%;
+    height: 100%;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+nav button {
+    border: none;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+nav button:hover {
+    height: 25px;
+    border-bottom: 5px solid rgb(100, 1, 1);
+    transition: border-bottom 0.3s ease-in-out;
+}
+nav button:hover {
+    cursor: pointer;
+}
+ul > li {
+    margin-left: 10px;
+}
+/* End of Nav*/
+
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+}
+.header-container {
+    padding: 20px 0px;
+}
+.personal-image {
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.personal-statement {
+    margin-left: 150px;
+    height: 20%;
+}
+/* IMAGE CAROUSEL*/
+.slideshow-images {
+    transform: translateY(-50px);
+    width: 500px;
+    min-width: 500px;
+    height: 300px;
+    min-height: 300px;
+    margin: 100px auto 100px auto;
+    overflow: hidden;
+}
+#ss-images {
+    display: flex;
+    flex-direction: row;
+    width: 2500px;
+    transition: margin 1s ease-in-out;
+}
+#ss-images img {
+    width: 500px;
+    height: 300px;
+}
+/* End of Image Carousel*/
+/* End of Header */
+
+/*Key-Skills*/
+
+#key-skills, #qualifications {
+    text-align: center;
+}
+#key-skills li, #qualifications li {
+    padding: 10px;
+}
+#key-skills li {
+    display: flex;
+    flex-direction: column;
+}
+#key-skills i {
+    margin-top: 20px;
+    font-size: 30px;
+}
+/*End of Key-Skills*/
+
+/* Education */
+
+.education-location {
+    margin: 50px;
+}
+
+/* End Of Education */
+
+/* Work Experience */
+h3, p > .work-experience-location {
+    margin-left: 10px;
+}
+.work-experience-location {
+    margin-bottom: 50px;
+}
+.work-experience-description {
+    padding-top: 15px;
+}
+#work-experience-description li {
+    list-style-type: circle;
+}
+
+/* End of Work Experience */
